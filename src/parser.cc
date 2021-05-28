@@ -1920,7 +1920,7 @@ yyreturn:
 void yyerror(const char *message)
 {
   extern int yylineno;
-  std::cerr << "(line " << yylineno << ") " << message << std::endl;
+//  std::cerr << "(line " << yylineno << ") " << message << std::endl;
 }
 
 bool parse_file(const std::string &file)

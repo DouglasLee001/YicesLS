@@ -1603,7 +1603,7 @@ int main(int argc, char *argv[]) {
     toyidl.mt.seed(toyidl._random_seed);
     srand(toyidl._random_seed);
     string cmd="./yices-smt2 --timeout=";
-    if(!toyidl.build_instance(toyidl._inst_file)){
+    if(!toyidl.build_instance(toyidl._inst_file)||toyidl._num_vars==0){
         system((cmd+"1200 "+toyidl._inst_file).data());
         return 1;
     }
