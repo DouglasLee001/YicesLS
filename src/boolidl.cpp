@@ -1608,6 +1608,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
     if(toyidl.is_validation){
+        toyidl._cutoff=1200;
         if(toyidl._num_clauses>0){toyidl.local_search();}
         if(toyidl._best_found_hard_cost==0){cout<<"sat\n";
             toyidl.print_solution(true);
@@ -1622,7 +1623,7 @@ int main(int argc, char *argv[]) {
         while (fgets(res,50,fp)!= NULL)cout<<res;
         return 0;
     }
-    toyidl._cutoff-=700;
+    toyidl._cutoff=500;
     if(toyidl._num_clauses>0){toyidl.local_search();}
     if(toyidl._best_found_hard_cost==0){cout<<"sat\n";return 0;}
     system((cmd+"600 "+toyidl._inst_file).data());

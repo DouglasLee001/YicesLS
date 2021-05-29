@@ -84,7 +84,7 @@ public:
     uint64_t                _num_clauses;
     uint64_t                _max_lit_num_in_clause=0;
     uint64_t                _additional_len;
-    int                     _random_seed;
+    int                     _random_seed=1;
     mt19937                 mt;
     map<int64_t,uint64_t>   sym2var;
     map<int,uint64_t>       sym2bool_var;

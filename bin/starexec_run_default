@@ -1,0 +1,3 @@
+# !/bin/bash
+
+./YicesLS -inst $1 

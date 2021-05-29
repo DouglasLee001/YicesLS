@@ -3,9 +3,9 @@ CFLAGS = -Wall -g -static -std=c++11 -O3
 
 OBJS = scanner.o parser.o ast.o cnf.o skeleton.o
 
-all: inc_bool
+all: YicesLS
 
-inc_bool: $(OBJS) boolidl.hpp
+YicesLS: $(OBJS) boolidl.hpp
 	$(CXX) $(CFLAGS) $(OBJS) boolidl.cpp -o $@
 
 

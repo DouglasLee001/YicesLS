@@ -1,0 +1,7 @@
+#!/bin/sh
+ 
+make
+cp ./YicesLS ../bin
+cd ../bin
+chmod a+x ./yices-smt2
+chmod a+x ./starexec_run_default
