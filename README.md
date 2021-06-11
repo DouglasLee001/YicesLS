@@ -7,7 +7,7 @@ this is a local search solver for SMT on Integer Difference Logic, and it combin
 To build the solver:
 
 ```bash
-cd src
+chmod +x starexec_build
 ./starexec_build
 ```
 
