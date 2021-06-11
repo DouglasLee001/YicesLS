@@ -1,0 +1,11 @@
+# !/bin/bash
+
+make
+cp ./inc_bool ./bin
+cd ./bin
+chmod a+x ./z3
+chmod a+x ./yices-smt2
+chmod a+x ./inc_bool
+chmod a+x ./lstech_maple
+chmod a+x ./starexec_run_default
+
